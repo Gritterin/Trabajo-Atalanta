@@ -1,34 +1,47 @@
-// SCROLL CON ANIMACION
-const reveals = document.querySelectorAll(".reveal");
+// ANIMACIONES SCROLL
 
-window.addEventListener("scroll", () => {
+const reveals = document.querySelectorAll(".reveal-top, .reveal-bottom");
 
-    reveals.forEach(el => {
+function revealOnScroll(){
 
-        const windowHeight = window.innerHeight;
-        const elementTop = el.getBoundingClientRect().top;
-        const visible = 120;
+const windowHeight = window.innerHeight;
 
-        if (elementTop < windowHeight - visible) {
-            el.classList.add("active");
-        }
+reveals.forEach(el => {
 
-    });
+const elementTop = el.getBoundingClientRect().top;
+const elementBottom = el.getBoundingClientRect().bottom;
+const visible = 120;
+
+if(elementTop < windowHeight - visible && elementBottom > 0){
+
+el.classList.add("active");
+
+}else{
+
+el.classList.remove("active");
+
+}
 
 });
 
+}
 
-// HAMBURGUESA PARA DISPOSITIVOS MOVILES
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+
+
+// HAMBURGUESA MOVIL
+
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".menu-nav ul");
 
 if (hamburger && navLinks) {
 
-    hamburger.addEventListener("click", () => {
+hamburger.addEventListener("click", () => {
 
-        navLinks.classList.toggle("active");
-        hamburger.classList.toggle("active");
+navLinks.classList.toggle("active");
+hamburger.classList.toggle("active");
 
-    });
+});
 
 }
