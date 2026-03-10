@@ -1,0 +1,402 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#05070c;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* HEADER */
+
+.header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px 80px;
+    z-index:1000;
+    box-shadow:0 2px 8px rgba(255,0,64,.3);
+}
+
+/* MENU CONTAINER */
+
+.menu-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    max-width:1200px;
+}
+
+/* LOGO */
+
+.logo a{
+    font-size:26px;
+    font-weight:700;
+    letter-spacing:2px;
+    color:#ff0040;
+    text-decoration:none;
+}
+
+/* NAV MENU */
+
+.menu-nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+.menu-nav ul li a{
+    color:white;
+    font-size:14px;
+    text-decoration:none;
+    font-weight:500;
+    position:relative;
+    transition:.3s;
+}
+
+.menu-nav ul li a:hover{
+    color:#ff0040;
+}
+
+.menu-nav ul li a::after{
+    content:"";
+    position:absolute;
+    width:0;
+    height:2px;
+    bottom:-5px;
+    left:0;
+    background:#ff0040;
+    transition:.3s;
+}
+
+.menu-nav ul li a:hover::after{
+    width:100%;
+}
+
+/* HAMBURGER */
+
+.hamburger{
+    display:none;
+    flex-direction:column;
+    gap:6px;
+    cursor:pointer;
+}
+
+.hamburger span{
+    height:3px;
+    width:25px;
+    background:white;
+    border-radius:2px;
+    transition:.4s;
+}
+
+/* HAMBURGER ANIMATION */
+
+.hamburger.active span:nth-child(1){
+    transform:rotate(45deg) translate(5px,5px);
+}
+
+.hamburger.active span:nth-child(2){
+    opacity:0;
+}
+
+.hamburger.active span:nth-child(3){
+    transform:rotate(-45deg) translate(5px,-5px);
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    margin-top:80px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    padding:20px;
+
+    background:
+    linear-gradient(rgba(5,7,12,.65), rgba(5,7,12,.85)),
+    url("/images/contacto/background.png");
+
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.container{
+    max-width:1000px;
+}
+
+/* TEXTOS */
+
+.subtitle{
+    color:#ff0040;
+    margin-bottom:25px;
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.title{
+    font-size:60px;
+    font-weight:700;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.text{
+    color:#ff2c55;
+    margin-bottom:40px;
+    font-size:18px;
+}
+
+/* CARDS */
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+
+    border:1px solid rgba(255,255,255,.2);
+    padding:20px 30px;
+    border-radius:12px;
+
+    backdrop-filter:blur(10px);
+
+    margin-bottom:40px;
+
+    max-width:750px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.card{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    padding:0 20px;
+    min-width:180px;
+
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(255,0,64,.5);
+}
+
+.icon{
+    font-size:28px;
+    margin-bottom:10px;
+    color:white;
+}
+
+/* BOTON */
+
+.btn{
+    background:#ff0040;
+    border:none;
+    padding:16px 45px;
+    border-radius:12px;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 30px rgba(255,0,64,.6);
+}
+
+/* ANIMACIONES */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes fadeDown{
+
+    from{
+        opacity:0;
+        transform:translateY(-40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* SCROLL REVEAL */
+
+.reveal{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .title{
+        font-size:35px;
+    }
+
+    .header{
+        padding:20px;
+    }
+
+    .menu-nav ul{
+        position:fixed;
+        top:80px;
+        right:-100%;
+        background:#000;
+        height:100%;
+        width:220px;
+        flex-direction:column;
+        gap:20px;
+        padding:30px;
+        transition:.4s;
+    }
+
+    .menu-nav ul.active{
+        right:0;
+    }
+
+    .hamburger{
+        display:flex;
+    }
+
+}
+
+/* ============================= */
+/* SECCION SERVICIOS */
+/* ============================= */
+
+.services{
+
+    background:#f4f4f4;
+    padding:120px 20px;
+    text-align:center;
+
+}
+
+.services-title{
+
+    font-size:38px;
+    margin-bottom:60px;
+    font-weight:700;
+    color:#1e2a3a;
+}
+
+/* CAJA NEGRA */
+
+.services-box{
+
+    max-width:1400px;
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+
+    gap:80px;
+
+    padding:90px 80px;
+
+    border-radius:15px;
+
+    background:
+    linear-gradient(to bottom,#ff003c 0%,#a40028 20%,#000 45%,#000 100%);
+
+    color:white;
+
+    box-shadow:0 10px 40px rgba(0,0,0,.4);
+}
+
+/* CADA COLUMNA */
+
+.service{
+
+    flex:1;
+    text-align:center;
+}
+
+/* ICONOS */
+
+.service-icon{
+
+    font-size:65px;
+    margin-bottom:25px;
+    color:white;
+}
+
+/* TITULOS */
+
+.service h3{
+
+    color:#ff003c;
+    font-size:26px;
+    margin-bottom:20px;
+}
+
+/* TEXTO */
+
+.service p{
+
+    font-size:17px;
+    line-height:1.8;
+    color:#d6d6d6;
+    max-width:280px;
+    margin:auto;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .services-box{
+
+        flex-direction:column;
+        text-align:center;
+        gap:50px;
+    }
+
+}
