@@ -1,19 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noticias - Ciberseguridad</title>
+<link rel="stylesheet" href="stylesNoticias.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1></h1>
+        <div class="logo">ATALANTA</div>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <nav id="nav">
+            <ul>
+                <li>Inicio</li>
+                <li>Noticias</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
     </header>
     <main>
-
+        <section class="hero">
+            <h3>NOTICIAS</h3>
+            <h1>
+              CONOCE LAS ÚLTIMAS TENDENCIAS<br>
+              EN CIBERSEGURIDAD Y<br>
+              TRANSFORMACIÓN DIGITAL
+            </h1>
+            <p>
+              Explora artículos, guías y novedades sobre ciberseguridad, inteligencia artificial,
+              transformación digital y formación especializada. Mantente al día con las mejores prácticas y consejos para proteger tu negocio
+              y potenciar tu carrera.
+            </p>
+          </section>
+          <section class="articles">
+            <div class="card">
+                <img src="images/img1.jpg" alt="Declaración de la Renta">
+                <span class="tag">Ciberseguridad</span>
+                <h3>Que no te estafen durante la declaración de la Renta</h3>
+                <p>Como cada año por estas fechas, a los contribuyentes les toca rendir cuentas a la Agencia Estatal de Administración Tributaria (AEAT). En este caso, a ...</p>
+                <a href="https://atalantago.com/que-no-estafen-declaracion-renta/" target="_blank" class="btn">Leer más →</a>
+            </div>
+            
+            <div class="card">
+                <img src="images/img2.jpg" alt="Ciberseguridad: pinceladas de realidad">
+                <span class="tag">Herramientas</span>
+                <h3>Ciberseguridad: pinceladas de realidad</h3>
+                <p>¡Buenas! Mi nombre es Javier Sánchez y soy arquitecto de seguridad en Atalanta. El pasado 23 de marzo ofrecí una charla a los alumnos del ...</p>
+                <a href="https://atalantago.com/ciberseguridad-pinceladas-realidad/" target="_blank" class="btn">Leer más →</a>
+            </div>
+            
+            <div class="card">
+                <img src="images/img3.jpg" alt="Terraform">
+                <span class="tag">Terraform</span>
+                <h4>Desarrollo Web</h4>
+                <h3>Cómo mantener los recursos del estado de Terraform controlados por Terraform</h3>
+                <p>¡Hola! Hoy vuelvo a escribir en este blog para contaros una forma que conozco para mantener los recursos del estado de Terraform, controlados por este ...</p>
+                <a href="https://atalantago.com/como-mantener-los-recursos-del-estado-de-terraform/" target="_blank" class="btn">Leer más →</a>
+            </div>
+            
+            <div class="card">
+                <img src="images/img4.jpg" alt="Cazando bots">
+                <span class="tag">Desarrollo Web</span>
+                <h3>Cazando bots</h3>
+                <p>¡Hola! Mi nombre es Pablo Nevado y soy uno de los técnicos de ciberseguridad que integramos el Purple Team de Atalanta. Durante una de nuestras ...</p>
+                <a href="https://atalantago.com/cazando-bots/" target="_blank" class="btn">Leer más →</a>
+            </div>
+            
+            <div class="card">
+                <img src="images/img5.jpg" alt="Localstack AWS">
+                <span class="tag">Desarrollo Web</span>
+                <h3>Cómo usar localstack para interactuar con AWS en tus scripts</h3>
+                <p>¡Buenas! Mi nombre es Adrián Sanz y me dedico a DevSecOps en Atalanta. Aparezco por aquí porque quiero compartir con vosotros una herramienta que me ...</p>
+                <a href="https://atalantago.com/localstack/" target="_blank" class="btn">Leer más →</a>
+            </div>
+            
+            <div class="card">
+                <img src="images/img6.jpg" alt="Infraestructura OT">
+                <span class="tag">0-days</span>
+                <h3>Virtualización de la infraestructura OT</h3>
+                <p>En el sector industrial existen dos conceptos que suelen entenderse por separado: IT y OT. Las Tecnologías de la Información y las Tecnologías de la ...</p>
+                <a href="https://atalantago.com/virtualizacion-de-la-infraestructura-ot/" target="_blank" class="btn">Leer más →</a>
+            </div>
+            
+            <div class="card">
+                <img src="images/img7.jpg" alt="Trabajo desde casa">
+                <span class="tag">0-days</span>
+                <h3>¡Trabajando desde casa no tengo vida!</h3>
+                <p>Desde marzo de 2020 la pandemia del Covid-19 ha forzado a las compañías a adoptar nuevas modalidades de trabajo que si bien se venían ya ...</p>
+                <a href="https://atalantago.com/agile-gestion-tiempo/" target="_blank" class="btn">Leer más →</a>
+            </div>
+            
+            <div class="card">
+                <img src="images/img8.jpg" alt="Log4shell">
+                <span class="tag">0-days</span>
+                <h3>Log4shell para profanos</h3>
+                <p>En las últimas semanas se ha montado un gran revuelo por algo llamado Log4shell, que si es una vulnerabilidad de proporciones catastróficas, que si internet ...</p>
+                <a href="https://atalantago.com/log4shell/" target="_blank" class="btn">Leer más →</a>
+            </div>
+            
+            <div class="card">
+                <img src="images/img9.jpg" alt="Spiderfoot Pentest">
+                <span class="tag">Ingeniería Social</span>
+                <h3>Spiderfoot</h3>
+                <p>Para hacer un buen pentest es necesario realizar una buena recolección de información del objetivo o lo que viene a ser una buena fase de ...</p>
+                <a href="https://atalantago.com/spiderfoot/" target="_blank" class="btn">Leer más →</a>
+            </div>
+            
+            <div class="card">
+                <img src="images/img10.jpg" alt="Kalitorify">
+                <span class="tag">Anonimato en la red</span>
+                <h3>Kalitorify</h3>
+                <p>Actualmente navegar por internet tiene sus riesgos, puesto que nuestra información puede acceder a ella cualquiera con conocimientos informáticos, por ello los usuarios cada día ...</p>
+                <a href="https://atalantago.com/kalitorify/" target="_blank" class="btn">Leer más →</a>
+            </div>
+            
+            <div class="card">
+                <img src="images/img11.jpg" alt="Python Library Hijacking">
+                <span class="tag">Ingeniería Social</span>
+                <h3>Python Library Hijacking</h3>
+                <p>Buenas a todos mi nombre es Daniel Tapia y en este artículo voy a explicar cómo explotar la vulnerabilidad de “Python Library Hijacking”. ¿Qué es? ...</p>
+                <a href="https://atalantago.com/python-library-hijacking/" target="_blank" class="btn">Leer más →</a>
+            </div>
+            
+            <div class="card">
+                <img src="images/img12.jpg" alt="RCE hacking">
+                <span class="tag">Iniciación al Hacking</span>
+                <h3>RCE</h3>
+                <p>En el artículo anterior vimos cómo realizar un ataque a través de la vulnerabilidad LFI. Hoy vamos a ver una nueva técnica denominada RCE que ...</p>
+                <a href="https://atalantago.com/rce/" target="_blank" class="btn">Leer más →</a>
+            </div>
+        </section>
     </main>
-    <fouter>
-
-    </fouter>
+    <script src="scriptNoticias.js"></script> 
 </body>
 </html>
