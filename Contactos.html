@@ -2,168 +2,339 @@
 <html lang="es">
 
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Atalanta</title>
-
-<link rel="stylesheet" href="CSS/Contactos.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Atalanta</title>
+  <link rel="stylesheet" href="CSS/Contactos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header class="header">
-
-<div class="menu-container">
-
-<div class="logo">
-<a href="#">ATALANTA</a>
-</div>
-
-<nav class="menu-nav">
-<ul class="nav-links">
-<li><a href="Quienes_Somos.html">Quienes Somos</a></li>
-<li><a href="Ciberseguridad.html">Ciberseguridad</a></li>
-<li><a href="Digital.html">Digital</a></li>
-<li><a href="Formacion.html">Formación</a></li>
-<li><a href="Empleo.html">Empleo</a></li>
-<li><a href="Noticias.html">Noticias</a></li>
-<li><a href="Contactos.html">Contactos</a></li>
-</ul>
-</nav>
-
-<div class="hamburger">
-<span></span>
-<span></span>
-<span></span>
-</div>
-
-</div>
-
-</header>
+  <!-- ==================== HEADER ==================== -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <a href="#">ATALANTA</a>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="Quienes_Somos.html">Quiénes somos</a></li>
+          <li><a href="Ciberseguridad.html">Ciberseguridad</a></li>
+          <li><a href="Digital.html">Digital</a></li>
+          <li><a href="Formacion.html">Formación</a></li>
+          <li><a href="Empleo.html">Empleo</a></li>
+          <li><a href="Noticias.html">Noticias</a></li>
+          <li><a href="Contactos.html" class="active">Contacto</a></li>
+        </ul>
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
 
 
-<!-- HERO -->
+  <!-- ==================== HERO ==================== -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg" style="background-image:url('images/contacto/background.png');"></div>
 
-<section class="hero">
+    <div class="hero-content">
+      <p class="hero-subtitle anim-drop">CONTACTA CON NUESTROS EXPERTOS EN CIBERSEGURIDAD E INNOVACIÓN</p>
+      <h1 class="hero-title anim-drop anim-delay-1">HABLEMOS DE CÓMO IMPULSAR TU SEGURIDAD Y TU NEGOCIO</h1>
+      <p class="hero-description anim-drop anim-delay-2">
+        Estamos aquí para ayudarte a proteger tu organización, transformar tu organización
+        y formar a tu equipo. Completa el formulario y uno de nuestros expertos se pondrá
+        en contacto contigo.
+      </p>
 
-<div class="hero-bg" style="background-image:url('images/contacto/background.png');"></div>
+      <div class="hero-features anim-drop anim-delay-3">
 
-<div class="container">
+        <div class="hero-feature">
+          <div class="hex-icon-wrap">
+            <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="none" stroke="#E50914" stroke-width="3"/>
+            </svg>
+            <img src="images/contacto/1.png" alt="Asesoramiento en ciberseguridad" class="hex-img">
+          </div>
+          <span>Asesoramiento en ciberseguridad</span>
+        </div>
 
-<h4 class="subtitle reveal-top">
-CONTACTA CON NUESTROS EXPERTOS EN CIBERSEGURIDAD E INNOVACIÓN
-</h4>
+        <div class="hero-feature">
+          <div class="hex-icon-wrap">
+            <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="none" stroke="#E50914" stroke-width="3"/>
+            </svg>
+            <img src="images/contacto/2.png" alt="Transformación digital segura" class="hex-img">
+          </div>
+          <span>Transformación digital segura</span>
+        </div>
 
-<h1 class="title reveal-top">
-HABLEMOS DE CÓMO IMPULSAR TU SEGURIDAD Y TU NEGOCIO
-</h1>
+        <div class="hero-feature">
+          <div class="hex-icon-wrap">
+            <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="none" stroke="#E50914" stroke-width="3"/>
+            </svg>
+            <img src="images/contacto/3.png" alt="Formación especializada" class="hex-img">
+          </div>
+          <span>Formación especializada</span>
+        </div>
 
-<p class="text reveal-top">
-Estamos aquí para ayudarte a proteger tu organización, transformar tu organización
-y formar a tu equipo. Completa el formulario y uno de nuestros expertos se pondrá
-en contacto contigo.
-</p>
+      </div>
 
-<div class="cards">
+      <a href="#diagnostico" class="btn-primary btn-glow anim-drop anim-delay-4">
+        <span>Agendar una reunión</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
 
-<div class="card reveal-top">
-<div class="icon">
-<i class="fa-solid fa-shield-halved"></i>
-</div>
-<p>Asesoramiento en ciberseguridad</p>
-</div>
-
-<div class="card reveal-top">
-<div class="icon">
-<i class="fa-solid fa-cloud"></i>
-</div>
-<p>Transformación digital segura</p>
-</div>
-
-<div class="card reveal-top">
-<div class="icon">
-<i class="fa-solid fa-graduation-cap"></i>
-</div>
-<p>Formación especializada</p>
-</div>
-
-</div>
-
-<button class="btn reveal-top">
-Agendar una reunión
-</button>
-
-</div>
-
-</section>
-
-
-<!-- SERVICIOS -->
-
-<section class="services">
-
-<h2 class="services-title reveal-bottom">
-¿EN QUÉ PODEMOS AYUDARTE?
-</h2>
-
-<div class="services-box">
-
-<div class="service reveal-bottom">
-
-<div class="service-icon">
-<i class="fa-solid fa-shield-halved"></i>
-</div>
-
-<h3>Consultoría Técnica</h3>
-
-<p>
-Auditorías, Red Team y SOC para empresas que no pueden
-permitirse fallos.
-</p>
-
-</div>
+    <div class="hero-scroll anim-drop anim-delay-5">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
 
-<div class="service reveal-bottom">
+  <!-- ==================== SERVICIOS ==================== -->
+  <section class="services">
+    <div class="container">
+      <h2 class="section-title-dark reveal-up">¿EN QUÉ PODEMOS AYUDARTE?</h2>
+      <div class="services-grid">
 
-<div class="service-icon">
-<i class="fa-solid fa-network-wired"></i>
-</div>
+        <div class="service-card reveal-up reveal-delay-1">
+          <div class="hex-icon-wrap hex-icon-large">
+            <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="rgba(229,9,20,0.08)" stroke="#E50914" stroke-width="3"/>
+            </svg>
+            <img src="images/contacto/4.png" alt="Consultoría Técnica" class="hex-img">
+          </div>
+          <h3>Consultoría Técnica</h3>
+          <p>Auditorías, Red Team y SOC para empresas que no pueden permitirse fallos.</p>
+        </div>
 
-<h3>Evolución Digital</h3>
+        <div class="service-card reveal-up reveal-delay-2">
+          <div class="hex-icon-wrap hex-icon-large">
+            <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="rgba(229,9,20,0.08)" stroke="#E50914" stroke-width="3"/>
+            </svg>
+            <img src="images/contacto/5.png" alt="Evolución Digital" class="hex-img">
+          </div>
+          <h3>Evolución Digital</h3>
+          <p>Estrategia e IA bajo control para directivos que buscan crecimiento seguro.</p>
+        </div>
 
-<p>
-Estrategia e IA bajo control para directivos que buscan
-crecimiento seguro.
-</p>
+        <div class="service-card reveal-up reveal-delay-3">
+          <div class="hex-icon-wrap hex-icon-large">
+            <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="rgba(229,9,20,0.08)" stroke="#E50914" stroke-width="3"/>
+            </svg>
+            <img src="images/contacto/6.png" alt="Formación de Alto Nivel" class="hex-img">
+          </div>
+          <h3>Formación de Alto Nivel</h3>
+          <p>Programas oficiales OffSec para profesionales y equipos corporativos.</p>
+        </div>
 
-</div>
+      </div>
+    </div>
+  </section>
 
 
-<div class="service reveal-bottom">
+  <!-- ==================== DIAGNÓSTICO / FORMULARIO ==================== -->
+  <section class="formulario-section" id="diagnostico">
 
-<div class="service-icon">
-<i class="fa-solid fa-certificate"></i>
-</div>
+    <div class="formulario-left">
+      <div class="formulario-left-content">
 
-<h3>Formación de Alto Nivel</h3>
+        <h2 class="section-title reveal-up">
+          <span class="text-gradient">Inicia tu Diagnóstico</span> de Seguridad con Atalanta
+        </h2>
+        <p class="reveal-up reveal-delay-1">
+          Protege tu negocio e impulsa tu transformación digital con soluciones diseñadas
+          por expertos certificados con experiencia internacional. Completa los datos para
+          iniciar vuestro <strong>reconocimiento de superficie pública</strong> y estrategia adaptada.
+        </p>
 
-<p>
-Programas oficiales OffSec para profesionales y equipos
-corporativos.
-</p>
+        <ul class="formulario-benefits">
 
-</div>
+          <li class="reveal-up reveal-delay-1">
+            <div class="hex-icon-wrap hex-icon-small">
+              <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="rgba(229,9,20,0.08)" stroke="#E50914" stroke-width="4"/>
+              </svg>
+              <img src="images/contacto/7.png" alt="Blindar negocio" class="hex-img">
+            </div>
+            <span>Soluciones avanzadas para blindar tu negocio frente a ciberamenazas.</span>
+          </li>
 
-</div>
+          <li class="reveal-up reveal-delay-2">
+            <div class="hex-icon-wrap hex-icon-small">
+              <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="rgba(229,9,20,0.08)" stroke="#E50914" stroke-width="4"/>
+              </svg>
+              <img src="images/contacto/8.png" alt="Estrategias digitales" class="hex-img">
+            </div>
+            <span>Diseño y ejecución de estrategias digitales sin comprometer la seguridad.</span>
+          </li>
 
-</section>
+          <li class="reveal-up reveal-delay-3">
+            <div class="hex-icon-wrap hex-icon-small">
+              <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="rgba(229,9,20,0.08)" stroke="#E50914" stroke-width="4"/>
+              </svg>
+              <img src="images/contacto/9.png" alt="Certificaciones" class="hex-img">
+            </div>
+            <span>Certificaciones reconocidas</span>
+          </li>
 
-<script src="Js/Contactos.js"></script>
+          <li class="reveal-up reveal-delay-4">
+            <div class="hex-icon-wrap hex-icon-small">
+              <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="rgba(229,9,20,0.08)" stroke="#E50914" stroke-width="4"/>
+              </svg>
+              <img src="images/contacto/10.png" alt="Expertos IA" class="hex-img">
+            </div>
+            <span>Expertos en ciberseguridad, IA y transformación digital con experiencia internacional.</span>
+          </li>
 
+        </ul>
+      </div>
+    </div>
+
+    <div class="formulario-right">
+      <div class="form-container reveal-up">
+        <h2>Iniciar Diagnóstico de Seguridad</h2>
+
+        <form id="contactForm" action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Nombre</label>
+              <input type="text" placeholder="Introduce tu nombre">
+            </div>
+            <div class="form-group">
+              <label>Apellidos</label>
+              <input type="text" placeholder="Introduce tus apellidos">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Email corporativo <span class="required">*</span></label>
+            <input type="email" placeholder="Email" required>
+          </div>
+
+          <div class="form-group">
+            <label>Empresa <span class="required">*</span></label>
+            <input type="text" placeholder="Empresa" required>
+          </div>
+
+          <div class="form-group">
+            <label>Desplegable <span class="required">*</span></label>
+            <select required>
+              <option value="" disabled selected>Cargo</option>
+              <option value="ceo">CEO / Director General</option>
+              <option value="cto">CTO / Director Técnico</option>
+              <option value="ciso">CISO / Responsable de Seguridad</option>
+              <option value="it">Responsable IT</option>
+              <option value="consultor">Consultor</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Área de Interés <span class="required">*</span></label>
+            <select required>
+              <option value="" disabled selected>¿Cuál es el desafío que más le urge resolver?</option>
+              <option value="ciber">Ciberseguridad ofensiva (Red Team, Pentesting)</option>
+              <option value="soc">SOC y monitorización continua</option>
+              <option value="digital">Transformación digital segura</option>
+              <option value="formacion">Formación especializada</option>
+              <option value="normativo">Cumplimiento normativo</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>¿Busca una solución inmediata o está en fase de planificación? <span class="required">*</span></label>
+            <input type="text" placeholder="" required>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="privacy" required>
+            <label for="privacy">
+              Acepto la <a href="#">política de privacidad</a> de Atalanta Evlution
+            </label>
+          </div>
+
+          <button type="submit" class="btn-primary btn-glow btn-full">
+            <span>Solicitar Sesión de Diagnóstico Técnico</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+
+        <div class="footer-logo">
+          <a href="#" class="logo-text">ATALANTA</a>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/company/atalanta-ciberseguridad?trk=ppro_cprof" target="_blank" rel="noopener" class="social-link">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/atalanta.academy/" target="_blank" rel="noopener" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-menu">
+          <h3>MENÚ</h3>
+          <ul>
+            <li><a href="Quienes_Somos.html">Quiénes somos</a></li>
+            <li><a href="Ciberseguridad.html">Ciberseguridad</a></li>
+            <li><a href="Digital.html">Digital</a></li>
+            <li><a href="Formacion.html">Formación</a></li>
+            <li><a href="Empleo.html">Empleo</a></li>
+            <li><a href="Noticias.html">Noticias</a></li>
+            <li><a href="Contactos.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>CONTACTO</h3>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:info@atalantago.com">info@atalantago.com</a>
+          </p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i>
+            Madrid, España
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright © 2026. Todos los derechos reservados por Atalanta Evolution</p>
+        <div class="footer-links">
+          <a href="#">AVISO LEGAL</a>
+          <a href="#">POLÍTICA DE PRIVACIDAD</a>
+          <a href="#">POLÍTICA DE COOKIES</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="Js/Contactos.js"></script>
 </body>
 </html>

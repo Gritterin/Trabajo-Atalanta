@@ -30,36 +30,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function updateReveal() {
     var windowHeight = window.innerHeight;
-    var scrollY = window.scrollY || window.pageYOffset;
 
     revealEls.forEach(function (el) {
       var rect = el.getBoundingClientRect();
       var elTop = rect.top;
       var elBottom = rect.bottom;
 
-      var enterThreshold = windowHeight - 60;   /* entra cuando el top está a 60px del fondo */
-      var exitThreshold  = 80;                  /* sale cuando el bottom sube más allá de 80px */
+      var enterThreshold = windowHeight - 60;
+      var exitThreshold  = 80;
 
       if (elTop < enterThreshold && elBottom > exitThreshold) {
-        /* Elemento en pantalla — visible */
         el.classList.add('is-visible');
         el.classList.remove('is-above');
       } else if (elBottom <= exitThreshold) {
-        /* Elemento salió por arriba — se va hacia arriba */
         el.classList.remove('is-visible');
         el.classList.add('is-above');
       } else {
-        /* Elemento todavía abajo, no visible aún */
         el.classList.remove('is-visible');
         el.classList.remove('is-above');
       }
     });
   }
 
-  /* Ejecutar al cargar */
   updateReveal();
-
-  /* Ejecutar en cada scroll */
   window.addEventListener('scroll', updateReveal, { passive: true });
 
 

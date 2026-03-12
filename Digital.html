@@ -1,19 +1,391 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital - Atalanta</title>
+  <link rel="stylesheet" href="CSS/Digital.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1></h1>
-    </header>
-    <main>
 
-    </main>
-    <fouter>
+  <!-- ==================== HEADER ==================== -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <a href="#">ATALANTA</a>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="Quienes_Somos.html">Quiénes somos</a></li>
+          <li><a href="Ciberseguridad.html">Ciberseguridad</a></li>
+          <li><a href="Digital.html" class="active">Digital</a></li>
+          <li><a href="Formacion.html">Formación</a></li>
+          <li><a href="Empleo.html">Empleo</a></li>
+          <li><a href="Noticias.html">Noticias</a></li>
+          <li><a href="Contactos.html">Contacto</a></li>
+        </ul>
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
 
-    </fouter>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg" style="background-image:url('images/digital/background.jpg');"></div>
+
+    <div class="hero-content">
+      <p class="hero-subtitle anim-drop">TRANSFORMACIÓN DIGITAL</p>
+      <h1 class="hero-title anim-drop anim-delay-1">MEJORAMOS EL VALOR DE TU COMPAÑÍA Y EXPERIENCIA CLIENTE A TRAVÉS DE LA TECNOLOGÍA</h1>
+      <p class="hero-description anim-drop anim-delay-2">
+        Ayudamos a nuestros clientes a establecer la estrategia digital y cómo llevarla a cabo,
+        a modernizar la tecnología core y adaptarla de forma segura.
+      </p>
+
+      <div class="hero-features anim-drop anim-delay-3">
+
+        <div class="hero-feature">
+          <div class="hex-icon-wrap">
+            <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="none" stroke="#E50914" stroke-width="3"/>
+            </svg>
+            <img src="images/digital/1.png" alt="Estrategia digital" class="hex-img">
+          </div>
+          <span>Diseño y ejecución de estrategia digital.</span>
+        </div>
+
+        <div class="hero-feature">
+          <div class="hex-icon-wrap">
+            <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="none" stroke="#E50914" stroke-width="3"/>
+            </svg>
+            <img src="images/digital/2.png" alt="Tecnología core" class="hex-img">
+          </div>
+          <span>Modernización de la tecnología core de tu empresa.</span>
+        </div>
+
+        <div class="hero-feature">
+          <div class="hex-icon-wrap">
+            <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="none" stroke="#E50914" stroke-width="3"/>
+            </svg>
+            <img src="images/digital/3.png" alt="Poder de los datos" class="hex-img">
+          </div>
+          <span>Aprovecha el 100% del poder de los datos.</span>
+        </div>
+
+      </div>
+
+      <a href="#estrategia" class="btn-primary btn-glow anim-drop anim-delay-4">
+        <span>Agendar Reunión</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+
+    <!-- hero-scroll oculto por CSS pero lo dejamos en el DOM -->
+    <div class="hero-scroll anim-drop anim-delay-5">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ==================== SERVICIOS DIGITALES ==================== -->
+  <section class="services">
+    <div class="container">
+      <div class="services-grid">
+
+        <!-- Tarjeta 1 -->
+        <div class="service-card reveal-up reveal-delay-1">
+          <div class="service-card-inner">
+            <div class="hex-icon-wrap hex-icon-large">
+              <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="rgba(229,9,20,0.08)" stroke="#E50914" stroke-width="3"/>
+              </svg>
+              <img src="images/digital/4.png" alt="Digital" class="hex-img">
+            </div>
+            <h3>Digital</h3>
+            <p>Diseñamos tu estrategia IT y te ayudamos a llevarla a cabo. Participamos en procesos de M&amp;A tecnológicos. Definimos la estrategia de migración a Cloud y te ayudamos a optimizar tus costes e inversiones.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="service-card reveal-up reveal-delay-2">
+          <div class="service-card-inner">
+            <div class="hex-icon-wrap hex-icon-large">
+              <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="rgba(229,9,20,0.08)" stroke="#E50914" stroke-width="3"/>
+              </svg>
+              <img src="images/digital/5.png" alt="Inteligencia Artificial" class="hex-img">
+            </div>
+            <h3>Inteligencia Artificial</h3>
+            <p>Definimos la estrategia IA y su adopción en la organización. Implementamos IA generativa para optimizar tus procesos y escalar tus resultados. No hacemos experimentos; desplegamos soluciones que funcionan.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="service-card reveal-up reveal-delay-3">
+          <div class="service-card-inner">
+            <div class="hex-icon-wrap hex-icon-large">
+              <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="rgba(229,9,20,0.08)" stroke="#E50914" stroke-width="3"/>
+              </svg>
+              <img src="images/digital/6.png" alt="Transformación" class="hex-img">
+            </div>
+            <h3>Transformación</h3>
+            <p>Lideramos el cambio en tu organización. No solo actualizamos tus herramientas; evolucionamos tu cultura y tus procesos para la nueva era tecnológica.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="service-card reveal-up reveal-delay-1">
+          <div class="service-card-inner">
+            <div class="hex-icon-wrap hex-icon-large">
+              <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="rgba(229,9,20,0.08)" stroke="#E50914" stroke-width="3"/>
+              </svg>
+              <img src="images/digital/7.png" alt="Soluciones" class="hex-img">
+            </div>
+            <h3>Soluciones</h3>
+            <p>Trabajamos con las principales soluciones del mercado para transformar tu negocio. (Salesforce, Adobe...)</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta 5 -->
+        <div class="service-card reveal-up reveal-delay-2">
+          <div class="service-card-inner">
+            <div class="hex-icon-wrap hex-icon-large">
+              <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="rgba(229,9,20,0.08)" stroke="#E50914" stroke-width="3"/>
+              </svg>
+              <img src="images/digital/8.png" alt="Innovación" class="hex-img">
+            </div>
+            <h3>Innovación</h3>
+            <p>Aceleramos tu llegada al mercado. Creamos tus productos mínimos viables (MVP) en tiempo récord para que valides tus ideas antes de invertir a ciegas. Disponemos de un ecosistema de innovación para que tu organización se beneficie.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta 6 -->
+        <div class="service-card reveal-up reveal-delay-3">
+          <div class="service-card-inner">
+            <div class="hex-icon-wrap hex-icon-large">
+              <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="rgba(229,9,20,0.08)" stroke="#E50914" stroke-width="3"/>
+              </svg>
+              <img src="images/digital/9.png" alt="Data" class="hex-img">
+            </div>
+            <h3>Data</h3>
+            <p>Activamos el valor real de tu información. Estructuramos tus datos para que dejes de intuir y empieces a decidir basándote en evidencias sólidas.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== FORMULARIO / ESTRATEGIA ==================== -->
+  <section class="formulario-section" id="estrategia">
+
+    <div class="formulario-left">
+      <div class="formulario-left-content">
+
+        <h2 class="section-title reveal-up">
+          <span class="text-gradient">¿Listo para alinear estrategia,</span> M&amp;A y tecnología core?
+        </h2>
+        <p class="reveal-up reveal-delay-1">
+          Completa el formulario y agendaremos una sesión con nuestro equipo para revisar tu situación actual,
+          tus planes de crecimiento o M&amp;A y diseñar juntos una hoja de ruta de transformación digital
+          segura y accionable.
+        </p>
+
+        <ul class="formulario-benefits">
+
+          <li class="reveal-up reveal-delay-1">
+            <div class="hex-icon-wrap hex-icon-small">
+              <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="rgba(229,9,20,0.08)" stroke="#E50914" stroke-width="4"/>
+              </svg>
+              <img src="images/digital/10.png" alt="Asesoramiento experto" class="hex-img">
+            </div>
+            <span>Asesoramiento experto en transformación digital segura</span>
+          </li>
+
+          <li class="reveal-up reveal-delay-2">
+            <div class="hex-icon-wrap hex-icon-small">
+              <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="rgba(229,9,20,0.08)" stroke="#E50914" stroke-width="4"/>
+              </svg>
+              <img src="images/digital/11.png" alt="Soluciones adaptadas" class="hex-img">
+            </div>
+            <span>Soluciones adaptadas a tu sector y objetivos</span>
+          </li>
+
+          <li class="reveal-up reveal-delay-3">
+            <div class="hex-icon-wrap hex-icon-small">
+              <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="rgba(229,9,20,0.08)" stroke="#E50914" stroke-width="4"/>
+              </svg>
+              <img src="images/digital/12.png" alt="Cumplimiento normativo" class="hex-img">
+            </div>
+            <span>Cumplimiento normativo (ISO, ENS, DORA, NIS2)</span>
+          </li>
+
+          <li class="reveal-up reveal-delay-4">
+            <div class="hex-icon-wrap hex-icon-small">
+              <svg class="hex-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="50,2 95,26 95,74 50,98 5,74 5,26" fill="rgba(229,9,20,0.08)" stroke="#E50914" stroke-width="4"/>
+              </svg>
+              <img src="images/digital/13.png" alt="Equipo certificado" class="hex-img">
+            </div>
+            <span>Equipo certificado con experiencia internacional</span>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="formulario-right">
+      <div class="form-container reveal-up">
+        <h2>Diseña tu Estrategia Digital Segura</h2>
+
+        <form id="contactForm" action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Nombre</label>
+              <input type="text" placeholder="Introduce tu nombre">
+            </div>
+            <div class="form-group">
+              <label>Apellidos</label>
+              <input type="text" placeholder="Introduce tus apellidos">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Email corporativo <span class="required">*</span></label>
+            <input type="email" placeholder="Email" required>
+          </div>
+
+          <div class="form-group">
+            <label>Empresa <span class="required">*</span></label>
+            <input type="text" placeholder="Empresa" required>
+          </div>
+
+          <div class="form-group">
+            <label>Cargo <span class="required">*</span></label>
+            <select required>
+              <option value="" disabled selected>Cargo</option>
+              <option value="ceo">CEO / Director General</option>
+              <option value="cto">CTO / Director Técnico</option>
+              <option value="ciso">CISO / Responsable de Seguridad</option>
+              <option value="it">Responsable IT</option>
+              <option value="consultor">Consultor</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Área de Interés <span class="required">*</span></label>
+            <select required>
+              <option value="" disabled selected>¿Cuál es el desafío que más te urge resolver?</option>
+              <option value="estrategia">Estrategia digital e IT</option>
+              <option value="ia">Inteligencia Artificial</option>
+              <option value="transformacion">Transformación organizacional</option>
+              <option value="cloud">Migración a Cloud</option>
+              <option value="data">Gestión y análisis de datos</option>
+              <option value="innovacion">Innovación y MVP</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>¿Buscas una solución inmediata o estás en fase de planificación? <span class="required">*</span></label>
+            <input type="text" placeholder="" required>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="privacy" required>
+            <label for="privacy">
+              Acepto la <a href="https://atalantago.com/politica-de-privacidad/">política de privacidad</a> de Atalanta Evlution
+            </label>
+          </div>
+
+          <button type="submit" class="btn-primary btn-glow btn-full">
+            <span>Solicitar Sesión de Diagnóstico Técnico</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+
+        <div class="footer-logo">
+          <a href="#" class="logo-text">ATALANTA</a>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/company/atalanta-ciberseguridad?trk=ppro_cprof" target="_blank" rel="noopener" class="social-link">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/atalanta.academy/" target="_blank" rel="noopener" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-menu">
+          <h3>MENÚ</h3>
+          <ul>
+            <li><a href="Quienes_Somos.html">Quiénes somos</a></li>
+            <li><a href="Ciberseguridad.html">Ciberseguridad</a></li>
+            <li><a href="Digital.html">Digital</a></li>
+            <li><a href="Formacion.html">Formación</a></li>
+            <li><a href="Empleo.html">Empleo</a></li>
+            <li><a href="Noticias.html">Noticias</a></li>
+            <li><a href="Contactos.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>CONTACTO</h3>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:info@atalantago.com">info@atalantago.com</a>
+          </p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i>
+            Madrid, España
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright © 2026. Todos los derechos reservados por Atalanta Evolution</p>
+        <div class="footer-links">
+          <a href="#">AVISO LEGAL</a>
+          <a href="#">POLÍTICA DE PRIVACIDAD</a>
+          <a href="#">POLÍTICA DE COOKIES</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="Js/Digital.js"></script>
 </body>
 </html>
