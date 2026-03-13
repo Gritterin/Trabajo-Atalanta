@@ -1,0 +1,63 @@
+<< ORIENTADO DIRECTAMENTE A EMPRESAS >>
+<< SOLAMENTE ENSEÑAN, NO LO APLICAN DIRECTAMENTE >>
+<< CREAR DOS FORMULARIOS UNO DE INFORMACION Y OTRO DE PARA FORMACION(uno especifico y otro mas simplificado) >>
+
+INDEX / INICIO(banner, algunos servicios destacados, CTA//solicitar informacion//,respaldos,metodologia,offsec,grafico de datos)
+ |
+ |-->BARRA DE OPCIONES (mas dinamica) 
+	     | 
+	     |--> QUIENES SOMOS 
+	     |		|
+	     |		|--> EQUIPO
+	     |		|--> HISTORIA
+	     |		|--> COLABORADORES
+	     |		|--> MISION, VISION Y VALORES
+	     |		
+	     |--> CIBERSEGURIDAD()
+	     |	        |
+	     |	        |--> CERTIFICACIONES 
+	     |	        |--> POSIBLE CAMBIO EN EL FORMULARIO(debatible) 
+	     |	        
+	     |--> FORMACION
+	     |        |
+	     |        |--> CURSOS
+	     |        |--> PLANES
+	     |        |	     |
+	     |        |	     |--> PENTESTER(top ventas)
+	     |        |	     |--> RED TEAM(nivel elite)
+	     |        |	     |--> IA (tendencia 2026)
+	     |        |	     
+	     |        |--> INSTITUCIONES ASOCIADAS(...)    
+	     |        |--> OFFSEC
+	     |        |--> TESTIMONIOS
+	     |        |--> FORMULARIO DE FORMACION(curso-nombre-email-numero)
+	     |              
+	     |--> EMPLEO
+	     |      |
+	     |      |--> 
+	     |      |--> 
+	     |      |--> 
+	     |      
+	     |--> NOTICIAS
+	     |	     |
+	     |	     |
+	     |	     |
+	     |	     |
+	     |	     |
+	     |	     
+	     |--> CONTACTO
+	     |	      |
+	     |	      |--> FORMULARIO(telefono?-)
+	     |        |--> 
+	     |
+_______________________________________
+AÑADIDOS:
+	     |--> 
+	     |
+	     |-->
+	     |
+	     |--> FAQ
+	     |     |--> ZONA COMENTARIOS/PREGUNTAS
+	     |     |--> PREGUNTAS FRECUENTES
+
+ 	
